@@ -6,7 +6,8 @@ first.
 
 ## Stack
 
-- **Expo SDK 57** + **expo-router** (file-based navigation, under `src/app/`)
+- **Expo SDK 56** + **expo-router** (file-based navigation, under `src/app/`) — pinned to 56 rather
+  than the newer 57 so the app runs in the stock App Store/Play Store Expo Go client
 - **TypeScript**, strict mode
 - **expo-sqlite** for local, on-device relational storage (vehicles + service logs)
 - **expo-notifications** for local (device-only) reminders — no push server required
