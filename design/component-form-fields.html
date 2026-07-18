@@ -1,0 +1,69 @@
+<!-- @dsCard group="Forms" -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Form Fields</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: #ffffff;
+    color: #000000;
+    padding: 32px;
+    max-width: 420px;
+  }
+  h1 { font-size: 20px; margin: 0 0 4px; }
+  p.sub { color: #666; margin: 0 0 24px; font-size: 13px; }
+  .field { margin-bottom: 24px; }
+  .label { font-size: 14px; font-weight: 700; line-height: 20px; margin-bottom: 4px; }
+  .input {
+    border-radius: 8px;
+    padding: 8px 16px;
+    background: #F0F0F3;
+    font-size: 16px;
+  }
+  .placeholder { color: #60646C; }
+  .segmented {
+    display: flex;
+    background: #F0F0F3;
+    border-radius: 8px;
+    padding: 2px;
+    gap: 2px;
+  }
+  .segment {
+    flex: 1;
+    text-align: center;
+    border-radius: 8px;
+    padding: 8px 0;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .segment.selected { background: #E0E1E6; font-weight: 700; }
+</style>
+</head>
+<body>
+  <h1>Form Fields</h1>
+  <p class="sub">TextField, SegmentedControl, DateField — src/components/form/</p>
+
+  <div class="field">
+    <div class="label">Make</div>
+    <div class="input placeholder">Honda</div>
+  </div>
+
+  <div class="field">
+    <div class="label">Oil type</div>
+    <div class="segmented">
+      <div class="segment">Conventional</div>
+      <div class="segment">Synthetic Blend</div>
+      <div class="segment selected">Full Synthetic</div>
+    </div>
+  </div>
+
+  <div class="field">
+    <div class="label">Date of oil change</div>
+    <div class="input">2026-07-17</div>
+  </div>
+</body>
+</html>

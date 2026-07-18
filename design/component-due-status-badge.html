@@ -1,0 +1,39 @@
+<!-- @dsCard group="Components" -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Due Status Badge</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: #ffffff;
+    color: #000000;
+    padding: 32px;
+    max-width: 420px;
+  }
+  h1 { font-size: 20px; margin: 0 0 4px; }
+  p.sub { color: #666; margin: 0 0 24px; font-size: 13px; }
+  .row { display: flex; align-items: center; gap: 12px; padding: 8px 0; }
+  .chip {
+    border-radius: 24px;
+    padding: 2px 8px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    display: inline-block;
+  }
+  .caption { font-size: 12px; color: #888; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+</style>
+</head>
+<body>
+  <h1>Due Status Badge</h1>
+  <p class="sub">DueStatusBadge levels — src/components/due-status-badge.tsx</p>
+  <div class="row"><span class="chip" style="background:#DAFBE1;color:#1A7F37;">OK</span><span class="caption">level="ok"</span></div>
+  <div class="row"><span class="chip" style="background:#FFF1C2;color:#9A5B00;">Due soon</span><span class="caption">level="due_soon"</span></div>
+  <div class="row"><span class="chip" style="background:#FFE3E0;color:#B42318;">Overdue</span><span class="caption">level="overdue"</span></div>
+  <div class="row"><span class="chip" style="background:#F0F0F3;color:#60646C;">No interval set</span><span class="caption">level="unknown"</span></div>
+</body>
+</html>

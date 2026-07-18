@@ -1,0 +1,55 @@
+<!-- @dsCard group="Components" -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Vehicle Card</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: #ffffff;
+    color: #000000;
+    padding: 32px;
+    max-width: 420px;
+  }
+  h1 { font-size: 20px; margin: 0 0 4px; }
+  p.sub { color: #666; margin: 0 0 24px; font-size: 13px; }
+  .stack { display: flex; flex-direction: column; gap: 16px; }
+  .card {
+    background: #F0F0F3;
+    border-radius: 24px;
+    padding: 16px;
+  }
+  .header { display: flex; justify-content: space-between; align-items: center; gap: 8px; margin-bottom: 2px; }
+  .title { font-size: 32px; font-weight: 600; line-height: 44px; }
+  .chip { border-radius: 24px; padding: 2px 8px; font-size: 14px; font-weight: 700; line-height: 20px; flex-shrink: 0; }
+  .sub-line { font-size: 14px; font-weight: 500; line-height: 20px; color: #60646C; margin-top: 2px; }
+</style>
+</head>
+<body>
+  <h1>Vehicle Card</h1>
+  <p class="sub">Vehicles list row — src/components/vehicle-card.tsx</p>
+  <div class="stack">
+    <div class="card">
+      <div class="header"><span class="title">2026 Toyota Corolla</span><span class="chip" style="background:#DAFBE1;color:#1A7F37;">OK</span></div>
+      <div class="sub-line">1.8L</div>
+      <div class="sub-line">5000 mi left · 184 days left</div>
+      <div class="sub-line">Odometer: 40,000 mi</div>
+    </div>
+    <div class="card">
+      <div class="header"><span class="title">2018 Honda Civic</span><span class="chip" style="background:#FFF1C2;color:#9A5B00;">Due soon</span></div>
+      <div class="sub-line">1.5L Turbo</div>
+      <div class="sub-line">200 mi left · 15 days left</div>
+      <div class="sub-line">Odometer: 44,800 mi</div>
+    </div>
+    <div class="card">
+      <div class="header"><span class="title">2015 Ford F-150</span><span class="chip" style="background:#FFE3E0;color:#B42318;">Overdue</span></div>
+      <div class="sub-line">5.0L V8</div>
+      <div class="sub-line">300 mi overdue · 10 days left</div>
+      <div class="sub-line">Odometer: 88,300 mi</div>
+    </div>
+  </div>
+</body>
+</html>

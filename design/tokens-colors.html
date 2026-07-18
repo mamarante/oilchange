@@ -1,0 +1,77 @@
+<!-- @dsCard group="Foundations" -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Colors</title>
+<style>
+  :root { color-scheme: light dark; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: #fafafa;
+    color: #111;
+    padding: 32px;
+  }
+  h1 { font-size: 20px; margin: 0 0 4px; }
+  p.sub { color: #666; margin: 0 0 24px; font-size: 13px; }
+  .panels { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+  .panel {
+    border-radius: 16px;
+    padding: 24px;
+    border: 1px solid rgba(0,0,0,0.08);
+  }
+  .panel.light { background: #ffffff; color: #000000; }
+  .panel.dark { background: #000000; color: #ffffff; }
+  .panel h2 { font-size: 13px; text-transform: uppercase; letter-spacing: 0.04em; margin: 0 0 16px; opacity: 0.6; }
+  .swatch-row { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; }
+  .swatch { width: 40px; height: 40px; border-radius: 10px; flex-shrink: 0; border: 1px solid rgba(127,127,127,0.25); }
+  .swatch-label { font-size: 13px; }
+  .swatch-label b { display: block; font-size: 13px; }
+  .swatch-label span { font-size: 12px; opacity: 0.6; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+  .status-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 20px; }
+  .status-chip {
+    border-radius: 24px;
+    padding: 2px 8px;
+    font-size: 14px;
+    font-weight: 700;
+    display: inline-block;
+  }
+</style>
+</head>
+<body>
+  <h1>Colors</h1>
+  <p class="sub">Base palette + status colors — mirrors src/constants/theme.ts (Colors, StatusColors)</p>
+  <div class="panels">
+    <div class="panel light">
+      <h2>Light</h2>
+      <div class="swatch-row"><div class="swatch" style="background:#ffffff;"></div><div class="swatch-label"><b>background</b><span>#ffffff</span></div></div>
+      <div class="swatch-row"><div class="swatch" style="background:#F0F0F3;"></div><div class="swatch-label"><b>backgroundElement</b><span>#F0F0F3</span></div></div>
+      <div class="swatch-row"><div class="swatch" style="background:#E0E1E6;"></div><div class="swatch-label"><b>backgroundSelected</b><span>#E0E1E6</span></div></div>
+      <div class="swatch-row"><div class="swatch" style="background:#000000;"></div><div class="swatch-label"><b>text</b><span>#000000</span></div></div>
+      <div class="swatch-row"><div class="swatch" style="background:#60646C;"></div><div class="swatch-label"><b>textSecondary</b><span>#60646C</span></div></div>
+      <div class="status-grid">
+        <span class="status-chip" style="background:#DAFBE1;color:#1A7F37;">OK</span>
+        <span class="status-chip" style="background:#FFF1C2;color:#9A5B00;">Due soon</span>
+        <span class="status-chip" style="background:#FFE3E0;color:#B42318;">Overdue</span>
+        <span class="status-chip" style="background:#F0F0F3;color:#60646C;">No interval set</span>
+      </div>
+    </div>
+    <div class="panel dark">
+      <h2>Dark</h2>
+      <div class="swatch-row"><div class="swatch" style="background:#000000;"></div><div class="swatch-label"><b>background</b><span>#000000</span></div></div>
+      <div class="swatch-row"><div class="swatch" style="background:#212225;"></div><div class="swatch-label"><b>backgroundElement</b><span>#212225</span></div></div>
+      <div class="swatch-row"><div class="swatch" style="background:#2E3135;"></div><div class="swatch-label"><b>backgroundSelected</b><span>#2E3135</span></div></div>
+      <div class="swatch-row"><div class="swatch" style="background:#ffffff;"></div><div class="swatch-label"><b>text</b><span>#ffffff</span></div></div>
+      <div class="swatch-row"><div class="swatch" style="background:#B0B4BA;"></div><div class="swatch-label"><b>textSecondary</b><span>#B0B4BA</span></div></div>
+      <div class="status-grid">
+        <span class="status-chip" style="background:#0F2D18;color:#4FDD79;">OK</span>
+        <span class="status-chip" style="background:#332404;color:#F2B94B;">Due soon</span>
+        <span class="status-chip" style="background:#3A0E0B;color:#FF6B61;">Overdue</span>
+        <span class="status-chip" style="background:#212225;color:#B0B4BA;">No interval set</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
